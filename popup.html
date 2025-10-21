@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LeetCode to GitHub</title>
+  </head>
+  <body style="width: 200px">
+    <button
+      id="push"
+      style="
+        background: lightyellow;
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid gray;
+      "
+    >
+      Push Code
+    </button>
+    <h3>GitHub Settings</h3>
+    <span id="extra-info"></span>
+    <div id="settings">
+      <label>Repo:</label>
+      <input type="text" id="repo" placeholder="user/repo" /><br />
+      <label>Folder:</label>
+      <input type="text" id="folder" placeholder="folder path" /><br />
+      <label>GitHub Token:</label>
+      <input
+        type="password"
+        id="token"
+        placeholder="Personal Access Token"
+      /><br />
+      <button id="save">Save Settings</button>
+    </div>
+    <button
+      id="show-settings"
+      style="
+        display: none;
+        background-color: lightgray;
+        width: 100%;
+        border: 1px solid gray;
+        cursor: pointer;
+      "
+    >
+      Show Settings
+    </button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
