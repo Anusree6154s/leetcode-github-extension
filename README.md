@@ -1,6 +1,6 @@
 <img width="100" height="100" align="left" alt="Untitled design" src="https://github.com/user-attachments/assets/f769ce8f-34fb-43b5-9ec0-cbd8a046e042" />
 
-# LeetCode to Github Code Pushing Browser Extension
+# LeetCode to Github Browser Extension
 
 <br>
 <img width="200" height="250" alt="image" align="right" src="https://github.com/user-attachments/assets/5c35743c-f80b-4248-a94d-fec357f53af3" />
