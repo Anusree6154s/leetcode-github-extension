@@ -1,8 +1,15 @@
-# LeetCode Helper Browser Extension
+<img width="100" height="100" align="left" alt="Untitled design" src="https://github.com/user-attachments/assets/f769ce8f-34fb-43b5-9ec0-cbd8a046e042" />
 
-A minimal browser extension that enhances the LeetCode experience with a popup UI. This repository contains the manifest and popup assets to run the extension in Chromium-based browsers (Chrome, Edge) and Firefox (with minor changes if needed).
+# LeetCode to Github Code Pushing Browser Extension
 
-## Features
+<br>
+<img width="200" height="250" alt="image" align="right" src="https://github.com/user-attachments/assets/5c35743c-f80b-4248-a94d-fec357f53af3" />
+
+
+A minimal browser extension that helps push code from LeetCode to GitHub. This repository contains the manifest and popup assets to run the extension in Chromium-based browsers (Chrome, Edge) 
+
+
+### Features
 
 - Popup UI with HTML/JS (popup.html, popup.js)
 - Extension icon (icon.png)
@@ -16,27 +23,23 @@ A minimal browser extension that enhances the LeetCode experience with a popup U
 ├─ manifest.json     # Extension manifest (v3)
 ├─ popup.html        # Popup UI
 ├─ popup.js          # Popup logic
-├─ icon.png          # Toolbar icon
-└─ .gitignore
+└─  icon.png          # Toolbar icon
 ```
 
 ## Installation (Chrome / Edge)
 
-1. Clone or download this repository.
-2. Open the browser and navigate to:
+1. Clone or download this repository: 
+   ```bash
+   git clone https://github.com/Anusree6154s/leetcode-github-extension
+   cd leetcode-github-extension
+   ```
+3. Open the browser and navigate to:
    - Chrome: chrome://extensions/
    - Edge: edge://extensions/
-3. Enable "Developer mode" (toggle in the top-right).
-4. Click "Load unpacked" and select the project directory.
-5. The extension will appear in your toolbar. Pin it if needed and click the icon to open the popup.
+4. Enable "Developer mode" (toggle in the top-right).
+5. Click "Load unpacked" and select the project directory.
+6. The extension will appear in your toolbar. Pin it if needed and click the icon to open the popup.
 
-## Installation (Firefox)
-
-Firefox uses Manifest V3 with ongoing changes. If your manifest.json is compatible:
-
-1. Go to about:debugging#/runtime/this-firefox
-2. Click "Load Temporary Add-on" and select manifest.json (or any file in the directory).
-3. If errors appear, review Firefox MV3 compatibility docs and update the manifest accordingly.
 
 ## Development
 
@@ -44,22 +47,6 @@ Firefox uses Manifest V3 with ongoing changes. If your manifest.json is compatib
 - Update manifest.json to declare permissions, icons, and background/service worker behavior as needed for advanced features (e.g., content scripts, host permissions, storage, commands).
 - After changes, reload the extension from the extensions page (Reload/Refresh button) and reopen the popup.
 
-### Common Enhancements
-
-- Add content scripts for interacting with LeetCode problem pages.
-- Use chrome.storage to persist user preferences.
-- Add commands (keyboard shortcuts) in the manifest.
-- Use a service worker for background tasks (Manifest V3).
-
-## Permissions
-
-This scaffold does not request special permissions. If you add features that require permissions (e.g., activeTab, storage, scripting), add them to manifest.json under the appropriate fields:
-
-- permissions
-- host_permissions
-- optional_permissions
-
-Only request what you need to minimize review friction and improve user trust.
 
 ## Troubleshooting
 
