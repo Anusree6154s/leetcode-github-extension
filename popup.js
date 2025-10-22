@@ -128,7 +128,7 @@ document.getElementById("push").addEventListener("click", async () => {
             },
             body: JSON.stringify({
               message: `Add LeetCode solution: ${problemTitle}`,
-              content: btoa(codeWithHeader),
+              content: btoa(unescape(encodeURIComponent(codeWithHeader))),
             }),
           })
             .then((res) => res.json())
